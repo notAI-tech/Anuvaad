@@ -97,7 +97,7 @@ class Anuvaad:
         )
 
     def anuvaad(
-        self, sentences, source_lang=None, target_lang=None, beam_size=8, max_len=None
+        self, sentences, source_lang=None, target_lang=None, beam_size=4, max_len=None
     ):
         return_single = True
         if isinstance(sentences, list):
