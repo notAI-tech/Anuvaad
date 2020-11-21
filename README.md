@@ -11,6 +11,8 @@ pip install --upgrade anuvaad
 
 # Usage
 
+**As a Python module**
+
 ```python
 from anuvaad import Anuvaad
 anu = Anuvaad("english-telugu")
@@ -23,8 +25,17 @@ anu.anuvaad("YS Jagan is the chief minister of Andhra Pradesh.")
 # Batch translation
 anu.anuvaad(["YS Jagan is the chief minister of Andhra Pradesh.",
             "Nara Lokesh suffered a humiliating defeat in Mangalagiri."])
-# ['వైఎస్ జగన్ ఆంధ్రప్రదేశ్ ముఖ్యమంత్రి.', 'మంగళగిరిలో నారా లోకేష్కు ఘోర పరాజయం ఎదురైంది.']
+# ['వైఎస్ జగన్ ఆంధ్రప్రదేశ్ ముఖ్యమంత్రి.', 'మంగళగిరిలో నారా లోకేష్కు అవమానకరమైన ఓటమి ఎదురైంది.']
 
+```
+
+**As a service**
+```bash
+# Starting the api service
+docker run -it -e BATCH_SIZE=1 -p 8080:8080 notaitech/anuvaad:english-telugu
+
+# Running a prediction
+curl -d '{"data": ["YS Jagan is the chief minister of Andhra Pradesh."]}' -H "Content-Type: application/json" -X POST http://localhost:8080/sync
 ```
 
 
