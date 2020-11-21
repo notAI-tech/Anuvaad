@@ -3,11 +3,41 @@ import pydload
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
 MODEL_URLS = {
-    "en-te": "",
-    "en-ta": "",
-    "en-kn": "",
-    "en-ml": "",
-    "en-mr": "",
+    "en-te": {
+        "pytorch_model.bin": "https://zenodo.org/record/4283506/files/en_te-pytorch_model.bin?download=1",
+        "config.json": "https://zenodo.org/record/4283506/files/en_te-config.json?download=1",
+        "special_tokens_map.json": "https://zenodo.org/record/4283506/files/en_te-special_tokens_map.json?download=1",
+        "spiece.model": "https://zenodo.org/record/4283506/files/en_te-spiece.model?download=1",
+        "tokenizer_config.json": "https://zenodo.org/record/4283506/files/en_te-tokenizer_config.json?download=1",
+    },
+    "en-ta": {
+        "pytorch_model.bin": "https://zenodo.org/record/4283506/files/en_ta-pytorch_model.bin?download=1",
+        "config.json": "https://zenodo.org/record/4283506/files/en_ta-config.json?download=1",
+        "special_tokens_map.json": "https://zenodo.org/record/4283506/files/en_ta-special_tokens_map.json?download=1",
+        "spiece.model": "https://zenodo.org/record/4283506/files/en_ta-spiece.model?download=1",
+        "tokenizer_config.json": "https://zenodo.org/record/4283506/files/en_ta-tokenizer_config.json?download=1",
+    },
+    "en-kn": {
+        "pytorch_model.bin": "https://zenodo.org/record/4283506/files/en_kn-pytorch_model.bin?download=1",
+        "config.json": "https://zenodo.org/record/4283506/files/en_kn-config.json?download=1",
+        "special_tokens_map.json": "https://zenodo.org/record/4283506/files/en_kn-special_tokens_map.json?download=1",
+        "spiece.model": "https://zenodo.org/record/4283506/files/en_kn-spiece.model?download=1",
+        "tokenizer_config.json": "https://zenodo.org/record/4283506/files/en_kn-tokenizer_config.json?download=1",
+    },
+    "en-ml": {
+        "pytorch_model.bin": "https://zenodo.org/record/4283506/files/en_ml-pytorch_model.bin?download=1",
+        "config.json": "https://zenodo.org/record/4283506/files/en_ml-config.json?download=1",
+        "special_tokens_map.json": "https://zenodo.org/record/4283506/files/en_ml-special_tokens_map.json?download=1",
+        "spiece.model": "https://zenodo.org/record/4283506/files/en_ml-spiece.model?download=1",
+        "tokenizer_config.json": "https://zenodo.org/record/4283506/files/en_ml-tokenizer_config.json?download=1",
+    },
+    "en-mr": {
+        "pytorch_model.bin": "https://zenodo.org/record/4283506/files/en_mr-pytorch_model.bin?download=1",
+        "config.json": "https://zenodo.org/record/4283506/files/en_mr-config.json?download=1",
+        "special_tokens_map.json": "https://zenodo.org/record/4283506/files/en_mr-special_tokens_map.json?download=1",
+        "spiece.model": "https://zenodo.org/record/4283506/files/en_mr-spiece.model?download=1",
+        "tokenizer_config.json": "https://zenodo.org/record/4283506/files/en_mr-tokenizer_config.json?download=1",
+    },
     "en-hi": {
         "pytorch_model.bin": "https://zenodo.org/record/4283362/files/en_hi-pytorch_model.bin?download=1",
         "config.json": "https://zenodo.org/record/4283362/files/en_hi-config.json?download=1",
