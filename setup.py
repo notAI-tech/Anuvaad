@@ -21,7 +21,7 @@ REQUIRES_PYTHON = ">=3.6.0"
 VERSION = "1.0.0"
 
 # What packages are required for this module to be executed?
-REQUIRED = ["transformers", "pydload", "torch>=1.5.0"]
+REQUIRED = ["transformers>=4.0.0rc1", "pydload", "torch>=1.5.0"]
 
 # What packages are optional?
 EXTRAS = {
@@ -121,5 +121,7 @@ setup(
         "Programming Language :: Python :: Implementation :: PyPy",
     ],
     # $ setup.py publish support.
-    cmdclass={"upload": UploadCommand,},
+    cmdclass={
+        "upload": UploadCommand,
+    },
 )
