@@ -49,6 +49,7 @@ MODEL_URLS = {
 
 LANGUAGE_ALISASES = {
     "telugu": "te",
+    "tamil": "ta",
     "english": "en",
     "hindi": "hi",
     "kannada": "kn",
