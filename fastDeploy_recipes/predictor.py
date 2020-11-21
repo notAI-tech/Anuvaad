@@ -5,10 +5,11 @@ import logging
 
 anu = Anuvaad(os.getenv("MODEL_NAME", "english-telugu"))
 
-MAX_INPUT_LENGTH = 200
+MAX_INPUT_LENGTH = int(os.getenv("MAX_INPUT_LENGTH", "200"))
 
 def predictor(in_sents=[], batch_size=1):
     results = []
+    in_sents = [in_sent[:MAX_INPUT_LENGTH] for in_sent in in_sents]
 
     while in_sents:
         try:

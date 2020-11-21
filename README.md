@@ -22,7 +22,7 @@ anu.anuvaad("YS Jagan is the chief minister of Andhra Pradesh.")
 
 # Batch translation
 anu.anuvaad(["YS Jagan is the chief minister of Andhra Pradesh.",
-            "Nara Lokesh suffered a humuliating defeat in Mangalagiri."])
+            "Nara Lokesh suffered a humiliating defeat in Mangalagiri."])
 # ['వైఎస్ జగన్ ఆంధ్రప్రదేశ్ ముఖ్యమంత్రి.', 'మంగళగిరిలో నారా లోకేష్కు ఘోర పరాజయం ఎదురైంది.']
 
 ```
