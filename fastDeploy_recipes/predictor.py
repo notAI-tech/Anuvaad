@@ -22,5 +22,6 @@ def predictor(in_sents=[], batch_size=1):
 
         results += result
 
-    return seg.segment(in_texts)
+    return results
+
 
