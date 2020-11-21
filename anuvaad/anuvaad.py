@@ -19,7 +19,7 @@ LANGUAGE_ALISASES = {
 	"marathi": "mr"
 }
 
-class Anuvada:
+class Anuvaad:
 	tokenizer = None
 	model = None
 	

@@ -12,9 +12,9 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'anuvada'
+NAME = 'anuvaad'
 DESCRIPTION = 'State of the art translation for Indic languages.'
-URL = 'https://github.com/notAI-tech/Anuvada'
+URL = 'https://github.com/notAI-tech/Anuvaad'
 EMAIL = 'praneeth@bpraneeth.com'
 AUTHOR = 'BEDAPUDI PRANEETH'
 REQUIRES_PYTHON = '>=3.6.0'
