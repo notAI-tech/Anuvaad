@@ -126,10 +126,7 @@ class Anuvaad:
         )
 
         outputs = [
-            self.tokenizer.decode(output_id)
-            .replace("<pad>", "")
-            .replace("</s>", "")
-            .strip()
+            self.tokenizer.decode(output_id, skip_special_tokens=True)
             for output_id in output_ids
         ]
 
