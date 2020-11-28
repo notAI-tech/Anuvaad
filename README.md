@@ -1,5 +1,5 @@
 # Anuvaad
-State of the art translation models for Indic languages.
+State of the art open-source translation models for Indic languages.
 
 
 # Installation
