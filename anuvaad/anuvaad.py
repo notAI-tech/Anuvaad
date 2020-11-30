@@ -1,4 +1,5 @@
 import os
+import torch
 import pydload
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
@@ -96,6 +97,10 @@ class Anuvaad:
             lang_path, return_dict=True
         )
 
+        if torch.cuda.is_available():
+            print(f"Using GPU")
+            self.model = self.model.cuda()
+
     def anuvaad(
         self, sentences, source_lang=None, target_lang=None, beam_size=4, max_len=None
     ):
@@ -121,6 +126,9 @@ class Anuvaad:
             padding=True,
         ).input_ids
 
+        if torch.cuda.is_available():
+            input_ids = input_ids.to('cuda')
+
         output_ids = self.model.generate(
             input_ids, num_beams=beam_size, max_length=max_len
         )
@@ -134,3 +142,4 @@ class Anuvaad:
             outputs = outputs[0]
 
         return outputs
+
