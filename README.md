@@ -41,10 +41,10 @@ curl -d '{"data": ["YS Jagan is the chief minister of Andhra Pradesh."]}' -H "Co
 
 |Available Models   |   Anuvaad BLEU    |  Google BLEU    |
 |--------|:--------------:|--------|
-|english-telugu |      |   |
+|english-telugu |   12.721173743764009   |  6.841437460383768 |
 |english-tamil | 12.737036149214694 | 5.558450942590664
 |english-malayalam |       |   |
-|english-kannada |       |   |
+|english-kannada |   7.888886041933815    | 3.2803251953567893  |
 |english-marathi |       |   |
 |english-hindi |       |   |
 
