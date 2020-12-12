@@ -25,5 +25,17 @@ python3 fastDeploy.py --build temp --source_dir fastDeploy_recipes --verbose --b
 docker commit temp notaitech/anuvaad:english-hindi
 docker push notaitech/anuvaad:english-hindi
 
+python3 fastDeploy.py --build temp --source_dir fastDeploy_recipes --verbose --base pyt_1_5_cpu --port 1238 --extra_config '{"MODEL_NAME": "english-bengali"}'
+docker commit temp notaitech/anuvaad:english-bengali
+docker push notaitech/anuvaad:english-bengali
+
+python3 fastDeploy.py --build temp --source_dir fastDeploy_recipes --verbose --base pyt_1_5_cpu --port 1238 --extra_config '{"MODEL_NAME": "english-punjabi"}'
+docker commit temp notaitech/anuvaad:english-punjabi
+docker push notaitech/anuvaad:english-punjabi
+
+python3 fastDeploy.py --build temp --source_dir fastDeploy_recipes --verbose --base pyt_1_5_cpu --port 1238 --extra_config '{"MODEL_NAME": "english-gujarati"}'
+docker commit temp notaitech/anuvaad:english-gujarati
+docker push notaitech/anuvaad:english-gujarati
+
 rm fastDeploy.py
 
