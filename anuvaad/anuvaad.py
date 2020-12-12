@@ -64,6 +64,36 @@ MODEL_URLS = {
         "spiece.model": "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_hi-spiece.model",
         "tokenizer_config.json": "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_hi-tokenizer_config.json",
     },
+    "en-bn": {
+        "pytorch_model.bin": [
+            "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_bn-pytorch_model.bin.xaa",
+            "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_bn-pytorch_model.bin.xab",
+        ],
+        "config.json": "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_bn-config.json",
+        "special_tokens_map.json": "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_bn-special_tokens_map.json",
+        "spiece.model": "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_bn-spiece.model",
+        "tokenizer_config.json": "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_bn-tokenizer_config.json",
+    },
+    "en-gu": {
+        "pytorch_model.bin": [
+            "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_gu-pytorch_model.bin.xaa",
+            "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_gu-pytorch_model.bin.xab",
+        ],
+        "config.json": "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_gu-config.json",
+        "special_tokens_map.json": "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_gu-special_tokens_map.json",
+        "spiece.model": "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_gu-spiece.model",
+        "tokenizer_config.json": "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_gu-tokenizer_config.json",
+    },
+    "en-pa": {
+        "pytorch_model.bin": [
+            "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_pa-pytorch_model.bin.xaa",
+            "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_pa-pytorch_model.bin.xab",
+        ],
+        "config.json": "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_pa-config.json",
+        "special_tokens_map.json": "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_pa-special_tokens_map.json",
+        "spiece.model": "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_pa-spiece.model",
+        "tokenizer_config.json": "https://github.com/notAI-tech/Anuvaad/releases/download/v1-checkpoints/en_pa-tokenizer_config.json",
+    },
 }
 
 LANGUAGE_ALISASES = {
@@ -74,6 +104,9 @@ LANGUAGE_ALISASES = {
     "kannada": "kn",
     "malayalam": "ml",
     "marathi": "mr",
+    "punjabi": "pa",
+    "gujarati": "gu",
+    "bengali": "bn",
 }
 
 _LANGUAGE_ALISASES = {v: k for k, v in LANGUAGE_ALISASES.items()}
