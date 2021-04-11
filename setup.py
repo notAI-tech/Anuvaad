@@ -18,7 +18,7 @@ URL = "https://github.com/notAI-tech/Anuvaad"
 EMAIL = "praneeth@bpraneeth.com"
 AUTHOR = "BEDAPUDI PRANEETH"
 REQUIRES_PYTHON = ">=3.6.0"
-VERSION = "1.0.5"
+VERSION = "1.0.6"
 
 # What packages are required for this module to be executed?
 REQUIRED = ["transformers>=4.5.0", "pydload>=1.0.9", "torch>=1.5.0", "sentencepiece"]
