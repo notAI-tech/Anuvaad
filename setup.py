@@ -21,7 +21,7 @@ REQUIRES_PYTHON = ">=3.6.0"
 VERSION = "1.0.5"
 
 # What packages are required for this module to be executed?
-REQUIRED = ["transformers>=4.0.0rc1", "pydload>=1.0.9", "torch>=1.5.0", "sentencepiece"]
+REQUIRED = ["transformers>=4.5.0", "pydload>=1.0.9", "torch>=1.5.0", "sentencepiece"]
 
 # What packages are optional?
 EXTRAS = {

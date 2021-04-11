@@ -1,7 +1,7 @@
 import os
 import torch
 import pydload
-from transformers import T5Tokenizer, T5ForConditionalGeneration
+from transformers import MT5Tokenizer, MT5ForConditionalGeneration
 
 MODEL_URLS = {
     "en-te": {
@@ -143,8 +143,8 @@ class Anuvaad:
             print(f"Downloading {file_name}")
             pydload.dload(url=url, save_to_path=file_path, max_time=None)
 
-        self.tokenizer = T5Tokenizer.from_pretrained(lang_path)
-        self.model = T5ForConditionalGeneration.from_pretrained(
+        self.tokenizer = MT5Tokenizer.from_pretrained(lang_path)
+        self.model = MT5ForConditionalGeneration.from_pretrained(
             lang_path, return_dict=True
         )
 
